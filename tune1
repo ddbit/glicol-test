@@ -4,4 +4,8 @@
 
 ~sn: speed 1.0 >> seq _ 60 _ 60 >> sp \snare1 >> add ~d2;
 
-o: arrange ~d1 2 ~d2 2 ~sn 16;
+
+
+~bass: seq 36 _ _ 36 _ _ 30 36 >> sawsynth 0.01 0.3>> add ~sn>> plate 0.1;
+
+o: arrange ~d1 1 ~d2 1 ~bass 6;
