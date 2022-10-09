@@ -1,0 +1,7 @@
+~d1: speed 1.0 >> seq 60 _ 60 _ >> sp \808bd;
+
+~d2: speed 2 >> seq 72 72 72 72 >> sp \808ch;
+
+~plain: ~d1 >> add ~d2;
+
+o: arrange ~d1 1 ~d2 1 ~plain 2;
