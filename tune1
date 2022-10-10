@@ -1,10 +1,20 @@
-~d1: speed 1 >> seq 72 72 72 72 72 72 72 72>> sp \808ch;
 
-~d2: speed 1.0 >> seq 60 _ 60 _ >> sp \808bd >> add ~d1;
+//hh: speed 8 >> seq 72>> sp \808ch;
 
-~sn: speed 1.0 >> seq _ 60 _ 60 >> sp \snare1 >> add ~d2;
+~kc: speed 1.0 >> seq 66 _ 66 _ >> sp \808bd;
+
+~kc2: speed 8 >> seq 80 >> sp \808bd;
+
+~sn: speed 1.0 >> seq _ 60 _ 60 >> sp \snare1;
+
+~b1: speed 2>>seq 36 _ 38 40 _ _ 36 36 
+>> sawsynth 0.01 0.3
+>> lpf 1000 0.3
+>> plate 0.1;
+
+~fx: speed 0.25 >> seq 48 >> sp \pad;
 
 
-~bass: seq 36 _ 39 36 _ _ 30 36 >> sawsynth 0.01 0.3>> lpf 1000 0.3>> add ~sn>> plate 0.1;
-
-o: arrange ~d1 1 ~d2 1 ~bass 6;
+~v: speed 1>> seq 60 62>> sp \talk2
+~bd: speed 4.0 >> seq 60>> bd 0.5
+//o: arrange ~d1 1 ~d2 1 ~bass 6;
